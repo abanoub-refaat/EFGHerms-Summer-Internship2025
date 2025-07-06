@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  padding-inline: 16px;
+
+  // A short hand for padding-top and padding right
+  padding-block: 8px;
+
+  background-color: #333;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
