@@ -5,14 +5,13 @@ import { Header } from './components/header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Home, Header],
+  imports: [RouterOutlet, Header],
   template: `
     <app-header />
     <main>
       <h1>Welcome to {{ title }}!</h1>
-      <app-home />
+      <router-outlet />
     </main>
-    <router-outlet />
   `,
   styles: [
     `
