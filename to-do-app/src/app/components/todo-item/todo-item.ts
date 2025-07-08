@@ -11,8 +11,13 @@ import { HighlightCompletedTodo } from '../../directives/highlight-completed-tod
 export class TodoItem {
   todo = input.required<TodoModel>();
   todoToggle = output<TodoModel>();
+  showDisc = false;
 
   todoClicked() {
     this.todoToggle.emit(this.todo());
+  }
+
+  toggleDiscribtion() {
+    this.showDisc = !this.showDisc;
   }
 }

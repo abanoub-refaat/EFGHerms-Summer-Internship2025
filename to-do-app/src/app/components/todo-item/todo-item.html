@@ -2,6 +2,7 @@
   appHighlightCompletedTodo
   [iscompleted]="todo().isComplete"
   class="todos__item"
+  (click)="toggleDiscribtion()"
 >
   <div class="checklist">
     <input
@@ -12,5 +13,8 @@
     />
     <label for="todo-{{ todo().id }}">{{ todo().title }}</label>
   </div>
-  <p>{{ todo().description }} text</p>
+
+  @if (showDisc) {
+  <p>{{ todo().description }} test fake description</p>
+  }
 </li>
