@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Todo } from './todo/todo';
+import { Todos } from './todo/todo';
 import { Search } from './components/search/search';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Todo, Search],
+  imports: [RouterOutlet, Todos, Search],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

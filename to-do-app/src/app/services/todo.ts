@@ -8,7 +8,7 @@ import { TodoModel } from '../models/todo.types';
 export class Todo {
   http = inject(HttpClient);
   getTodosFromAPI() {
-    const url = 'https://jsonplaceholder.typicode.com/todos';
+    const url = 'https://jsonplaceholder.typicode.com/todos?_start=0&_limit=9';
     return this.http.get<Array<TodoModel>>(url);
   }
 }

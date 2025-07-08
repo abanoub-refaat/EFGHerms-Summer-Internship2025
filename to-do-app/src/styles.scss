@@ -1,4 +1,10 @@
 // Global light mode styles
+$bg-light-primary: "#fff";
+$bg-light-secondary: "";
+
+// Globall dark mode styles
+$bg-dark-primary: "";
+$bg-dark-secondary: "";
 
 * {
   margin: 0;
@@ -7,16 +13,11 @@
   outline: none;
 }
 
+html,
 body {
   height: 100%;
 }
-
-$bg-light-primary: "#fff";
-$bg-light-secondary: "";
-
-// Globall dark mode styles
-$bg-dark-primary: "";
-$bg-dark-secondary: "";
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
