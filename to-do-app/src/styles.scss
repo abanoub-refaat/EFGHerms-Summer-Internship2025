@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+// Global light mode styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+$bg-light-primary: "#fff";
+$bg-light-secondary: "";
+
+// Globall dark mode styles
+$bg-dark-primary: "";
+$bg-dark-secondary: "";
