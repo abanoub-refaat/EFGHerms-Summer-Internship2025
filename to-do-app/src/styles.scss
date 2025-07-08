@@ -7,9 +7,16 @@
   outline: none;
 }
 
+body {
+  height: 100%;
+}
+
 $bg-light-primary: "#fff";
 $bg-light-secondary: "";
 
 // Globall dark mode styles
 $bg-dark-primary: "";
 $bg-dark-secondary: "";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
