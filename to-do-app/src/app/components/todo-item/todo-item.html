@@ -3,12 +3,14 @@
   [iscompleted]="todo().isComplete"
   class="todos__item"
 >
-  <input
-    id="todo-{{ todo().id }}"
-    type="checkbox"
-    [checked]="todo().isComplete"
-    (change)="this.todoClicked()"
-  />
-  <label for="todo-{{ todo().id }}">{{ todo().title }}</label>
-  <p>{{ todo().description }}</p>
+  <div class="checklist">
+    <input
+      id="todo-{{ todo().id }}"
+      type="checkbox"
+      [checked]="todo().isComplete"
+      (change)="this.todoClicked()"
+    />
+    <label for="todo-{{ todo().id }}">{{ todo().title }}</label>
+  </div>
+  <p>{{ todo().description }} text</p>
 </li>
