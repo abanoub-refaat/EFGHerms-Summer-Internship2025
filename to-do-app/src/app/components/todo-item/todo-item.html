@@ -14,6 +14,12 @@
     <label for="todo-{{ todo().id }}">{{ todo().title }}</label>
   </div>
 
+  <div class="modify-todo">
+    <button type="button">
+      <i class="fa-solid fa-pen-to-square"></i>
+    </button>
+  </div>
+
   @if (showDisc) {
   <p>{{ todo().description }} test fake description</p>
   }
